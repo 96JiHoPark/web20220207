@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        h1 {
+            color: gold;
+        }
+
+        /* id를 통한 css 적용 */
+        #myhead1{
+            background-color: black;
+        }
+
+        #myhead2{
+            background-color: blue;
+        }
+
+        #myhead3{
+            background-color: red;
+        }
+
+        #myhead4{
+            background-color: burlywood;
+        }
+
+        #myhead5{
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- id 지정 -->
+    <h1 id="myhead1">Lorem ipsum dolor sit amet.</h1>
+    <h1 id="myhead2">Corporis, repellendus! Excepturi, consequuntur quam.</h1>
+    <h1 id="myhead3">In culpa rem corrupti nesciunt.</h1>
+    <h1>Accusamus ipsam est iste tempora!</h1>
+    <h1>Facilis nostrum deserunt dolorem iure.</h1>
+
+    <hr>
+    <h1>id attribute 작성시 주의점</h1>
+    <p>한 문서에 같은 id값을 갖는 요소가 존재하면 안된다.</p>
+    <p>즉 아래는 잘못된 코드이다.</p>
+    <!-- 만약 내가 볼 때에 정상적으로 작동이 된다고 하더라도 약속이므로 지킬 것 -->
+    <h1 id="myhead4">Lorem, ipsum dolor.</h1>
+    <h1 id="myhead4">Enim, nostrum perspiciatis?</h1>
+
+    <p>id 값은 대소문자를 구분한다.</p>
+    <h1 id="myHead5">Lorem, ipsum dolor.</h1>
+    <h1 id="myhead5">Non, reiciendis iusto?</h1>
+    
+    <p>id 값에 사용할 수 있는 문자는 '영문대소문자, 숫자, -, _' 이다</p>
+    <p>문자로 시작해야한다.</p>
+    <p>잘못된 경우 예시</p>
+    <h1 id="6head">Lorem, ipsum dolor.</h1>
+    <h1 id="7, head">Iure, enim ex.</h1>
+
+    <p>id 값은 하나의 요소가 여러개 가질 수 없다.</p>
+    <p>잘못된 경우 예시</p>
+    <h1 id="myhead8", id="myhead9">Lorem, ipsum dolor.</h1>
+    <h1 id="myhead10 myhead11">Quae, eius autem!</h1>
+    <h1 id="myhead12, myhead13">Lorem, ipsum dolor.</h1>
+</body>
+
+</html>
