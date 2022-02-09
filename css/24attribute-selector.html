@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* 'title' attribute 의 value가 'j'로 시작하는 element 선택 */
+        [title^="j"]{
+            color: blue;
+        }
+        
+        /* 'title' attribute 의 value가 'a'로 끝나는 element 선택*/
+        [title$="a"]{
+            background-color: gold;
+        }
+
+        h1[title$="a"]{
+            font-size: 5em;
+        }
+
+        /* 'title' attribute 의 value 에 'u'를 포함하는 element 선택 */
+        [title*="u"]{
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <!-- h1[title]*5>lorem3 -->
+    <h1 title="jimin">Lorem, ipsum dolor.</h1>
+    <h1 title="jungkuk">Odit, consectetur voluptate.</h1>
+    <h1 title="rm">Molestiae, maxime repudiandae.</h1>
+    <h1 title="v">Magnam, deleniti reprehenderit.</h1>
+    <h1 title="suga">Dolore, iusto ratione?</h1>
+
+    <!-- h2[title]*3>lorem3 -->
+    <h2 title="korea">Lorem, ipsum dolor.</h2>
+    <h2 title="seoul">Voluptatum, et corrupti?</h2>
+    <h2 title="asia">Natus, eius voluptatibus.</h2>
+
+
+</body>
+</html>

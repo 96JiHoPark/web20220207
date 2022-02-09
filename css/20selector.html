@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        small{
+            color: gray;
+            display: none;
+        }
+
+        /* 마우스를 올린 h1 의 안에 있는 small 은 보이게 한다 */
+        h1:hover > small{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- (h1>lorem3+small>lorem3)*5 -->
+    <h1>Lorem, ipsum dolor.<small>Lorem, ipsum dolor.</small></h1>
+    <h1>Sint, voluptates sapiente.<small>Rerum, ratione sequi.</small></h1>
+    <h1>Dolore, quo accusamus?<small>Facere, libero quibusdam.</small></h1>
+    <h1>Animi, debitis voluptas.<small>Est, deserunt dolorem?</small></h1>
+    <h1>Aliquid, dolor repellat?<small>Eius, autem? Eius!</small></h1>
+</body>
+</html>

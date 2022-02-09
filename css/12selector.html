@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* class selector 사용시 중복되는 property의 값은 가장 마지막의 것으로 결정된다 */
+        /* id selector 로 지정하면 후에 class selector 중복되는 property의 값을 적용하더라도 우선순위가 더 높은 id selector의 값으로 적용된다 */
+        /* selector에 커서를 올리면 우선순위를 수치로 볼 수 있다 (0, 0, 0) */
+
+        h1#head4.note{
+            color: aqua;
+        }
+
+        #head3{
+            color: brown;
+        }
+        
+        
+        .note.error{
+            color: gold;
+        }
+        .error{
+            color: red;
+        }
+
+        .note{
+            color:blue;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- h1#head$.note*2>lorem3 -->
+    <h1 id="head1" class="note">Lorem, ipsum dolor.</h1>
+    <h1 id="head2" class="note">Amet, iste laborum.</h1>
+
+    <!-- h1#head$@3.note.error*2>lorem3 -->
+    <h1 id="head3" class="note error">Lorem, ipsum dolor.</h1>
+    <h1 id="head4" class="note error">Architecto, pariatur quod!</h1>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* value 한개 적는 경우 : 4면 모두 적용 */
+        #head1{
+            border-style: solid;
+            border-width: 5px;
+            border-color: brown;
+        }
+        /* value 두 개 적는 경우 : 상+하, 좌+우 로 적용 */
+        #head2{
+            border-style: solid dashed;
+            border-width: 50px 10px;
+            border-color: brown red;
+        }
+        /* value 세 개 적는 경우 :  상, 좌+우, 하*/
+        #head3{
+            border-style: solid dashed double;
+            border-width: 1px 5px 10px;
+            border-color: brown red blue;
+        }
+        /* value 네 개 적는 경우 : 위부터 시계방향으로 적용(상,우,하,좌) */
+        #head4{
+            border-style: solid dashed double groove;
+            border-width: 5px 2px 1px 10px;
+            border-color: brown red blue green;
+        }
+
+        /* border : width style color  */
+        #head5{
+            border: 10px solid green;
+        }
+        
+        #head6{
+            border-top: 7px dashed red;
+        }
+        #head7{
+            border-bottom: 10px double blue;
+        }
+        #head8{
+            border-left: 20px solid yellow;
+        }
+        #head9{
+            border-right: 12px groove green;
+        }
+    </style>
+</head>
+<body>
+    <!-- h1*8#head$>lorem3 -->
+    <h1 id="head1">Lorem, ipsum dolor.</h1>
+    <h1 id="head2">Quaerat, maxime obcaecati?</h1>
+    <h1 id="head3">Praesentium, quia amet.</h1>
+    <h1 id="head4">Quia, mollitia magnam!</h1>
+    <h1 id="head5">Accusamus, ut odit.</h1>
+    <h1 id="head6">Similique, cupiditate obcaecati.</h1>
+    <h1 id="head7">Aut, voluptate quaerat?</h1>
+    <h1 id="head8">Itaque, voluptas libero?</h1>
+    <h1 id="head9">Itaque, voluptas libero?</h1>
+</body>
+</html>

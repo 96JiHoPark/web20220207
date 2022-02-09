@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table{
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+
+        td{
+            border: 2px solid black;
+        }
+
+        /* 각 테이블의 첫번째 tr 안의 td 선택 */
+        tr:nth-child(1)>td{
+            text-align: center;
+            font-weight: bold;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- table>tr*3>td*3>lorem1 -->
+    <table>
+        <tr>
+            <td>Lorem.</td>
+            <td>Dolores.</td>
+            <td>Amet.</td>
+        </tr>
+        <tr>
+            <td>Lorem.</td>
+            <td>Commodi!</td>
+            <td>Voluptates.</td>
+        </tr>
+        <tr>
+            <td>Lorem.</td>
+            <td>Tempore.</td>
+            <td>Perspiciatis.</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- 연습문제 : 5행 6열 table 작성 -->
+    <!-- table>tr*5>td*6>lorem1 -->
+    <table>
+        <tr>
+            <td>Lorem.</td>
+            <td>Odit.</td>
+            <td>Reiciendis!</td>
+            <td>Quia.</td>
+            <td>Magni.</td>
+            <td>Eos?</td>
+        </tr>
+        <tr>
+            <td>Lorem.</td>
+            <td>Dolores.</td>
+            <td>Voluptas.</td>
+            <td>Delectus.</td>
+            <td>Nobis.</td>
+            <td>Ratione?</td>
+        </tr>
+        <tr>
+            <td>Lorem.</td>
+            <td>Enim!</td>
+            <td>Assumenda!</td>
+            <td>Pariatur?</td>
+            <td>Quasi.</td>
+            <td>Omnis?</td>
+        </tr>
+        <tr>
+            <td>Lorem.</td>
+            <td>Doloribus.</td>
+            <td>Recusandae?</td>
+            <td>Rem!</td>
+            <td>Quaerat.</td>
+            <td>Soluta!</td>
+        </tr>
+        <tr>
+            <td>Lorem.</td>
+            <td>Laudantium.</td>
+            <td>Quis.</td>
+            <td>Rerum?</td>
+            <td>Placeat!</td>
+            <td>Neque.</td>
+        </tr>
+    </table>
+</body>
+</html>

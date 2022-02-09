@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* 'title'attribute를 가진 element 선택 */
+        [title]{
+            text-decoration: underline;
+        }
+
+        /* 'title'attribute를 가진 h1 선택*/
+        h1[title]{
+            text-decoration: line-through;
+        }
+
+        /* attribute=value가 title=seould 인 element 선택  */
+        [title="seoul"]{
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- h1*3>lorem3^h1[title]>lorem3 -->
+    <h1>Lorem, ipsum dolor.</h1>
+    <h1>Animi, quia eius.</h1>
+    <h1>Eum, facilis atque.</h1>
+    <h1 title="korea">Lorem, ipsum dolor.</h1>
+
+    <!-- p[title>lorem] -->
+    <p title="seoul">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error accusantium aliquam beatae quod eos sapiente sed natus! Obcaecati incidunt et, facilis laboriosam, impedit molestiae ut officiis iusto vitae nulla ducimus.</p>
+
+</body>
+</html>

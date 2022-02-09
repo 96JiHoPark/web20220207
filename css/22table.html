@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* 여러 개를 한꺼번에 선택할 때에는 콤마(,)를 이용 */
+        table, th, td{
+            border: 2px solid black;
+        }
+        /* 짝수번째 tr 선택 */
+        tr:nth-child(even){
+            background-color: aqua;
+        }
+        /* 위에 마우스가 있는 td */
+        td:hover{
+            color: blue;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <table>
+        <!-- th 은 기본적으로 굵은 글씨 + 가운데 정렬 -->
+        <tr>
+            <th>Lorem.</th>
+            <th>Natus!</th>
+            <th>Quia!</th>
+            <th>Perspiciatis?</th>
+        </tr>
+        <tr>
+            <td>Lorem.</td>
+            <td>Tempora.</td>
+            <td>Et?</td>
+            <td>Vero!</td>
+        </tr>
+        <tr>
+            <td>Lorem.</td>
+            <td>Amet?</td>
+            <td>Autem!</td>
+            <td>Impedit.</td>
+        </tr>
+        <tr>
+            <td>Lorem.</td>
+            <td>Accusamus.</td>
+            <td>Officiis?</td>
+            <td>Ducimus!</td>
+        </tr>
+    </table>
+
+
+</body>
+</html>
