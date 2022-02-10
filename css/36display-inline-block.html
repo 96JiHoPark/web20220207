@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* inline-block은 어느 요소의 배치는 inline처럼, 크기(width, height, margin, padding)는 block처럼 사용하고 싶을 때에 사용한다*/
+        /* 그냥 inline 요소와는 다르게 크기를 변경하더라도 */
+        .ex{
+            display: inline-block;
+            border: 1px solid black;
+        }
+
+        /* 그냥 inline 요소와는 다르게 크기를 변경하더라도 의도한대로 적용이 잘 된다. */
+        .ex:first-of-type{
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+            padding: 10px;
+        }
+
+        .ex:nth-of-type(2){
+            width: 50px;
+            height: 70px;
+            margin: 15px;
+            padding: 7px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="ex">Lorem, ipsum dolor.</div>
+    <div class="ex">Dignissimos, dicta ex?</div>
+    <div class="ex">Ex, repudiandae corrupti?</div>
+    <div class="ex">Saepe, sit officia!</div>
+    <div class="ex">Consequatur, ratione provident.</div>
+</body>
+</html>

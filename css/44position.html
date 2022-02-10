@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .sub{
+            display: none;
+            position: absolute;
+            top: 0px;
+            left: 120px;
+            background-color: black;
+            color: white;
+        }
+
+        .sub > li{
+            width: 120px;
+            padding: 3px;
+            margin: 0px;
+        }
+
+        .sub > li:hover{
+            border: 2px solid white;
+        }
+
+        ul{
+            padding: 0px;
+            margin: 0px;
+            list-style-type: none;
+        }
+
+        .main > li{
+            width: 120px;
+            height: 50px;
+            position: relative;
+            padding: 3px;
+            margin: 0px;
+            background-color: black;
+            color: white;
+            box-sizing: border-box;
+            border: 5px solid black;
+        }
+
+        .main > li:hover{
+            border-right: 5px solid yellow;
+        }
+
+        .main > li:hover > .sub {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- ul.main>li*5>lorem1+ul.sub>li*3>lorem1 -->
+    <ul class="main">
+        <li>
+            Lorem.
+            <ul class="sub">
+                <li>Lorem.</li>
+                <li>Quos?</li>
+                <li>At!</li>
+            </ul>
+        </li>
+        <li>
+            Et?
+            <ul class="sub">
+                <li>Lorem.</li>
+                <li>Sunt.</li>
+                <li>Dignissimos!</li>
+            </ul>
+        </li>
+        <li>
+            Eligendi.
+            <ul class="sub">
+                <li>Lorem.</li>
+                <li>Magnam.</li>
+                <li>Velit.</li>
+            </ul>
+        </li>
+        <li>
+            Nisi.
+            <ul class="sub">
+                <li>Lorem.</li>
+                <li>Incidunt?</li>
+                <li>Facilis.</li>
+            </ul>
+        </li>
+        <li>
+            Magnam?
+            <ul class="sub">
+                <li>Lorem.</li>
+                <li>Quidem.</li>
+                <li>Amet?</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

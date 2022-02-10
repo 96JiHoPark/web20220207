@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .item {
+            text-align: center;
+            font-size: 2em;
+        }
+
+        .item:nth-child(odd) {
+            background-color: #ffd700;
+            color: deeppink;
+        }
+
+        .item:nth-child(even) {
+            background-color: indigo;
+            color: white;
+        }
+
+        .box {
+            /* flex 안의 요소는 가장 높은 높이를 가지고, 왼쪽에서 오른쪽으로 배열된다 */
+            display: flex;
+            height: 300px;
+        }
+
+        .menu-container{
+            display: flex;
+            background-color: skyblue;
+        }
+
+        .menu-item{
+            color: white;
+            border-right: 1px solid rgb(172, 228, 250) ;
+            font-size: 2em;
+            font-weight: bold;
+            padding: 5px 10px;
+            box-sizing: border-box;
+        }
+
+        .menu-item:hover{
+            background-color: rgb(72, 203, 255);
+            border-bottom: 4px solid white;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div id="ex1" class="item">1</div>
+        <div id="ex2" class="item">2</div>
+        <div id="ex3" class="item">3</div>
+        <div id="ex4" class="item">4</div>
+        <div id="ex5" class="item">5</div>
+    </div>
+
+    <hr>
+
+    <div class="menu-container"> <!-- flex container -->
+        <div class="menu-item">Lorem.</div> <!--flex item-->
+        <div class="menu-item">Nostrum.</div>
+        <div class="menu-item">A.</div>
+        <div class="menu-item">Inventore.</div>
+        <div class="menu-item">Omnis!</div>
+        <div class="menu-item">A.</div>
+        <div class="menu-item">Illo.</div>
+    </div>
+
+</body>
+
+</html>

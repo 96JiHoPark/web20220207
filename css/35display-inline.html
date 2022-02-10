@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        a{
+            border: 2px solid black;
+        }
+
+        .container > span{
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <!-- inline 요소들은 기본적으로 줄바꿈 없이 나열된다. -->
+    <a href="">Lorem, ipsum.</a><a href="">Dolor, rem?</a><a href="">Obcaecati, quasi?</a>
+
+    <hr>
+
+    <img src="../html/ddoong.png" alt=""><img src="../html/jingjing.png" alt="" height="500px">
+
+    <hr>
+
+    <!-- 대표적인 inline 요소는 span이 있다 -->
+    <!-- html코드에서 엔터로 줄바꿈을 넣어주더라도 한번 띄어쓸뿐, 줄바꿈은 일어나지 않는다 -->
+    <span>Lorem, ipsum.</span>
+    <span>Voluptas, repellat.</span>
+    <span>Vero, cupiditate?</span>
+
+    <br>
+
+    <span>Lorem, ipsum.</span><span>Voluptas, repellat.</span><span>Vero, cupiditate?</span>
+
+    <hr>
+
+    <!-- inline 요소들은 width, height, padding, margin 가 의도한대로 적용되지 않는다. -->
+    <!-- 네 가지 값들을 임의로 변경 후 브라우저에서 확인해보면 다른 요소와 겹치는 부분이 생기기도 한다 -->
+    <div class="container">
+        <span>Lorem, ipsum.</span>
+        <span>Eligendi, quia.</span>
+        <span>Praesentium, iusto.</span>
+    </div>
+    
+</body>
+</html>
