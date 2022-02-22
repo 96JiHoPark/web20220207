@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css"
+        integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("#input1").keyup(function () {
+            
+                let text = this.value.toLowerCase();
+                for (let item of $("#ul1>li")) {
+                    if ($(item).text().toLowerCase().includes(text)) {
+                        $(item).slideDown("fast");
+                    }else{
+                        $(item).slideUp("fast");
+                    }
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <input type="text" id="input1">
+    <ul id="ul1">
+        <li>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, beatae?
+        </li>
+        <li>
+            Error consectetur eos necessitatibus eius laboriosam eum enim amet distinctio?
+        </li>
+        <li>
+            Repellendus, minima esse? Quasi asperiores velit, consequuntur numquam cum odio!
+        </li>
+        <li>
+            Itaque culpa et dolore odit repudiandae tempore laboriosam ipsam vel.
+        </li>
+        <li>
+            Animi nemo voluptates aliquid fuga consequuntur dolore sed, voluptas doloremque!
+        </li>
+        <li>
+            Veniam praesentium quibusdam, sed nulla delectus cupiditate ea magni doloremque.
+        </li>
+        <li>
+            Repudiandae maxime iste eos corrupti quasi fugit rerum modi laborum.
+        </li>
+        <li>
+            Earum laudantium atque optio non quos commodi repellat voluptate sit?
+        </li>
+        <li>
+            Iste, ipsa quasi laborum officia quis eligendi pariatur voluptate sapiente!
+        </li>
+        <li>
+            Sit, reiciendis? Ad iste tempore consequuntur voluptates, ducimus a eius?
+        </li>
+        <li>
+            Dignissimos cum architecto voluptates provident accusantium, molestiae adipisci commodi obcaecati.
+        </li>
+        <li>
+            Non, veniam culpa distinctio repellat inventore labore a repellendus porro?
+        </li>
+        <li>
+            Dolore corporis voluptatibus illum atque cupiditate repudiandae at doloribus nobis!
+        </li>
+        <li>
+            Incidunt quasi nam distinctio sit ducimus eos aliquam modi. Inventore.
+        </li>
+        <li>
+            Voluptatum aut molestias repellat facilis, ipsam quibusdam facere adipisci corporis.
+        </li>
+        <li>
+            Fuga laboriosam ad exercitationem sequi maiores provident, ipsa ea! Blanditiis!
+        </li>
+        <li>
+            Quasi quo ipsum tempora corporis ex qui magni officiis alias.
+        </li>
+        <li>
+            Quaerat necessitatibus est sapiente incidunt culpa consectetur delectus neque architecto.
+        </li>
+        <li>
+            Omnis ab qui a dolorem fugit accusamus vel nulla pariatur.
+        </li>
+        <li>
+            Est quaerat magni voluptatibus porro libero unde at perferendis esse?
+        </li>
+        <li>
+            Voluptate ullam consequatur soluta qui nam fugiat natus illum quisquam.
+        </li>
+        <li>
+            Cum, ullam esse accusamus qui ad nobis nemo eum earum?
+        </li>
+        <li>
+            Voluptas, aperiam. Voluptates voluptatem quaerat ducimus, quae aliquid laborum quos.
+        </li>
+        <li>
+            Ipsa autem voluptatum cupiditate officia doloribus laudantium deserunt, a omnis!
+        </li>
+        <li>
+            Voluptates tempore natus amet nesciunt aperiam sit itaque voluptas a?
+        </li>
+        <li>
+            Dolores nisi quidem ratione nobis laborum similique labore dicta ad.
+        </li>
+        <li>
+            Perferendis accusamus nihil blanditiis, ea dignissimos exercitationem maxime culpa quam?
+        </li>
+        <li>
+            Nostrum quis sunt assumenda veritatis neque facilis harum cum nobis?
+        </li>
+        <li>
+            Accusamus temporibus, distinctio vero sequi voluptate maiores debitis sit eius!
+        </li>
+        <li>
+            Velit perspiciatis consequuntur unde nihil rerum ducimus sunt voluptatem repellat.
+        </li>
+        <li>
+            Quas, similique deleniti. Ad quibusdam at consequuntur eligendi mollitia vitae.
+        </li>
+        <li>
+            Nulla atque nam rem suscipit, sit fuga quaerat laudantium accusamus.
+        </li>
+        <li>
+            Beatae neque aspernatur ex perspiciatis, distinctio ab aliquid blanditiis impedit.
+        </li>
+        <li>
+            Nesciunt labore blanditiis sed nobis harum saepe asperiores ut error?
+        </li>
+        <li>
+            In ducimus ad ex quo nemo saepe nesciunt architecto beatae?
+        </li>
+        <li>
+            Nesciunt maiores labore molestiae recusandae, nam aspernatur obcaecati suscipit rerum!
+        </li>
+        <li>
+            Deleniti voluptates omnis sit consectetur asperiores, aut quas repellat ducimus.
+        </li>
+        <li>
+            Quae illo error hic nulla earum iste, praesentium minima mollitia.
+        </li>
+        <li>
+            Veniam atque ut maxime. Natus laudantium velit molestias nisi culpa.
+        </li>
+        <li>
+            Aperiam voluptas deserunt quisquam, quis porro officiis. Accusamus, harum provident.
+        </li>
+        <li>
+            Aliquam eaque unde non laborum dolores recusandae quam similique doloribus.
+        </li>
+        <li>
+            Culpa ipsum, quae ea tenetur ipsam debitis rerum modi eligendi.
+        </li>
+        <li>
+            Ut rerum dicta debitis ipsa porro amet ipsum suscipit labore!
+        </li>
+        <li>
+            Molestiae ab assumenda distinctio adipisci repudiandae ut voluptatem facilis dolore.
+        </li>
+        <li>
+            Temporibus dolore cupiditate modi asperiores iste officia fugiat ut ducimus?
+        </li>
+        <li>
+            Perspiciatis cumque accusamus sint, laudantium consequuntur sapiente eius voluptates fugit.
+        </li>
+        <li>
+            Rem dolorem, officiis modi nihil quo mollitia velit officia! Inventore!
+        </li>
+        <li>
+            In minima fugiat similique ullam iste omnis. Provident, tenetur dicta.
+        </li>
+        <li>
+            Sunt necessitatibus blanditiis accusamus ex fugiat placeat similique reprehenderit eum?
+        </li>
+        <li>
+            Voluptatibus nostrum cupiditate cumque, nisi porro autem eum dolorum qui?
+        </li>
+    </ul>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,3 +1,5 @@
-let coolfunc=function(){
-    console.log("cool");
+let coolfunc = function() {
+    console.log("cool!!!!!!!!!!!!");
 }
+
+
